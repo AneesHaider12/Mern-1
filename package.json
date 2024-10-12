@@ -1,0 +1,20 @@
+{
+  "name": "mern-1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
