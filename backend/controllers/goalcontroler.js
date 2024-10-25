@@ -1,9 +1,9 @@
-const getgoals=(req,res)=>{
+const getgoals=async(req,res)=>{
      res.status(200).json({
         message:'get goals'
      })
 }
-const postgoals=(req,res)=>{
+const postgoals=async(req,res)=>{
    if(!req.body.text){
       res.status(400)
       throw new Error('enter required fields')
@@ -12,12 +12,12 @@ const postgoals=(req,res)=>{
        message:'post goals'
     })
 }
-const updategoals=(req,res)=>{
+const updategoals=async(req,res)=>{
     res.status(200).json({
        message:'update goals'
     })
 }
-const deletegoals=(req,res)=>{
+const deletegoals=async(req,res)=>{
     res.status(200).json({
        message:'delete goals'
     })
